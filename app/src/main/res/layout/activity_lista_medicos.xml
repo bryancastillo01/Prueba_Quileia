@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edt_questions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaMedicosActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0372CA"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="1dp"
+            android:background="#384AAC"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="34sp"
+            android:text="MedicApp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFC107"
+            android:textSize="60dp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="619dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="360dp"
+                android:layout_height="500dp"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Listado Medicos"
+                        android:textAlignment="textStart"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/medico_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_paciente_1"
+                            android:layout_width="135dp"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/logomedico" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dato_1"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:hint="Sin datos"
+                                android:textSize="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/eliminar_id1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:backgroundTint="#FF0000"
+                                    android:text="Eliminar"
+                                    android:textSize="8dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/medico_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_paciente_2"
+                            android:layout_width="135dp"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/logomedico" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dato_2"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:hint="Sin datos"
+                                android:textSize="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/eliminar_id2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:backgroundTint="#FF0000"
+                                    android:text="Eliminar"
+                                    android:textSize="8dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/medico_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_paciente_3"
+                            android:layout_width="135dp"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/logomedico" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dato_3"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:hint="Sin datos"
+                                android:textSize="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/eliminar_id3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:backgroundTint="#FF0000"
+                                    android:text="Eliminar"
+                                    android:textSize="8dp">
+
+                                </Button><![CDATA[
+
+
+
+                                />
+
+                            ]]>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/medico_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_paciente_4"
+                            android:layout_width="135dp"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/logomedico" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dato_4"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:hint="Sin datos"
+                                android:textSize="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/eliminar_id4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:backgroundTint="#FF0000"
+                                    android:text="Eliminar"
+                                    android:textSize="8dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_actualizar_medico"
+                            android:layout_width="75dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#E91E63"
+                            android:text="Actualizar Medico"
+                            android:textSize="6dp"
+                            app:cornerRadius="30dp" />
+
+                        <Button
+                            android:id="@+id/btn_agregar_medico"
+                            android:layout_width="120dp"
+                            android:layout_height="55dp"
+                            android:backgroundTint="#E91E63"
+                            android:text="Agregar Medico"
+                            android:textSize="9dp"
+                            app:cornerRadius="30dp" />
+
+                        <Button
+                            android:id="@+id/btn_eliminar_medicos"
+                            android:layout_width="75dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#FF0000"
+                            android:text="Eliminar Registros"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_volver_inicio2"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#2196F3"
+                android:text="Inicio"
+                android:textSize="10sp"
+                app:cornerRadius="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

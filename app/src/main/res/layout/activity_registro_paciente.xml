@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroPacienteActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0372CA"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="1dp"
+            android:background="#384AAC"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="34sp"
+            android:text="MedicApp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFC107"
+            android:textSize="60dp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_registro_paciente"
+                android:layout_width="340dp"
+                android:layout_height="480dp"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:text="Registre sus datos"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/nombre_txt"
+                        android:layout_width="290dp"
+                        android:layout_height="40dp"
+                        android:hint="Nombres"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/apellido_txt"
+                        android:layout_width="290dp"
+                        android:layout_height="40dp"
+                        android:hint="Apellidos"
+                        android:textSize="16dp" />
+
+
+                    <EditText
+                        android:id="@+id/fecha_nacimiento_txt"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Fecha Nacimiento"
+                        android:inputType="date"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/identificacion_txt"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Identificacion"
+                        android:inputType="number|textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:text="Esta en Tratamiento?"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner_si_no"
+                        android:layout_width="290dp"
+                        android:layout_height="40dp"
+                        android:autofillHints="Esta en Tratamiento?" />
+
+                    <EditText
+                        android:id="@+id/couta_moderadora_txt"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Couta Moderadora"
+                        android:inputType="number"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/fecha_cita_txt"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Fecha Cita"
+                        android:inputType="date|time" />
+
+                    <Button
+                        android:id="@+id/btn_guardar_paciente"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#E91E63"
+                        android:text="Guardar"
+                        app:cornerRadius="30dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
